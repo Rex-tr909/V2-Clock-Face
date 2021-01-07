@@ -1,0 +1,168 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Space+Mono&family=JetBrains+Mono&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto:wght@400;700&display=swap');
+
+@keyframes shadowy {
+    0% {
+        box-shadow: 10px 10px black;
+    }
+    100% {
+        box-shadow: 15px 15px black;
+    }
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Crimson Text';
+    font-size: 2em;
+    margin: 5px;
+}
+
+h1 {
+    font-family: 'Crimson Text';
+    font-size: 3em;
+    margin: 10px;
+    transition: font-variation-settings 0.2s;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto';
+    line-height: 1.6;
+}
+
+.bodyDiv {
+    width: 60%;
+    margin: auto;
+}
+
+button, select {
+    font-family: 'Roboto';
+    font-weight: 800;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.divForm {
+    padding: 10px;
+    padding-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: white;
+    /* border-style: dotted; */
+    /* box-shadow: rgba(0, 0, 0, 0.22) 0px 25.6px 57.6px 0px, rgba(0, 0, 0, 0.18) 0px 4.8px 14.4px 0px; */
+
+    box-shadow: rgba(0, 0, 0, 0.133) 0px 3.2px 7.2px 0px, rgba(0, 0, 0, 0.11) 0px 0.6px 1.8px 0px;
+}
+
+#editForm {
+    /* border-top: solid;
+    border-width: 10px; */
+}
+
+.outputFeedback {
+    background-color: whitesmoke;
+    width: fit-content;
+    padding: 5px 10px;
+}
+
+.routeBox {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width:10%;
+    text-align: center;
+    font-weight: 400;
+    border: 2px outset;
+    cursor: pointer;
+}
+
+.routeBox:hover {
+    font-weight: 700;
+}
+
+.canvasContainer {
+    background-color: white;
+    padding: 35px 20px 10px 20px;
+    margin-top: 103px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.133) 0px 3.2px 7.2px 0px, rgba(0, 0, 0, 0.11) 0px 0.6px 1.8px 0px;
+}
+
+.headerBox {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.133) 0px 3.2px 7.2px 0px, rgba(0, 0, 0, 0.11) 0px 0.6px 1.8px 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /* display: flex; */
+    /* width: 200px; */
+    /* border-bottom-style: dotted; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+    /* transition: transform 0.1s;
+    animation: shadowy 0.5s infinite alternate;     */
+}
+
+#helpButton {
+    cursor: pointer;
+}
+
+#help {
+    top: 105;
+    display: none;
+}
+
+#conflictPopup {
+    bottom: 250;
+}
+
+.popup {
+    background-color: white;
+    width: 40%;
+    position: fixed;
+    left: 30%;
+    padding: 10px 30px 15px 30px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 25.6px 57.6px 0px, rgba(0, 0, 0, 0.18) 0px 4.8px 14.4px 0px;
+    z-index: 1;
+}
+
+.removeJourney {
+    display: flex;
+}
+
+.addBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.routesContainer {
+    display: flex;
+}
+
+.sliderBox {
+    display: grid;
+}
+
+#plusButton {
+    width: 15%;
+    font-size: 30px;
+    border: 2px outset;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#currentRoute {
+    margin: 12px 0;
+}
+
+button {
+    padding: 7px;
+    margin: 10px 0;
+    font-size: 1em;
+}

@@ -1,0 +1,66 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body>
+    <div class="headerBox">
+        <h1>Ferry Scheduling Tool</h1>
+        <h2 id="helpButton">?</h2>
+    </div>
+
+    <div id="help" class="popup">
+        <h2>Help</h2>
+        <p>- Select a ferry route from the <b>routes</b> table.</p>
+        <p>- Give the route a <b>journey</b> by selecting a departure time as well as a wharf of departure and wharf of arrival.</p>
+        <p>- Press the <b>add</b> button (+) to add the journey to the chart.</p>
+        <p>- If a birthing <b>conflict</b> occurs - a notification will appear and the journey will not be added.</p>
+    </div>
+
+    <div id="bodyDiv" class="bodyDiv">
+        <div class="canvasContainer">
+            <canvas id="ferryChart"></canvas>
+        </div>
+
+        <div class="divForm">
+            <h2>Routes:</h2>
+            <hr>
+            <div id="routes" class="routesContainer">
+            </div>
+        </div>
+
+        <div id="editForm" class="divForm">
+            <h2 id="routeName"></h2>
+
+            <hr>
+            <div id="currentRoute">
+            </div>
+
+            <hr>
+            <div class="addBox">
+                <div class="sliderBox">
+                    <label>Departure Time:</label>
+                    <input id="time" type="range" min="0" max="59" name="Y" value="0">
+                    <p id="timeOutput" class="outputFeedback">:00</p>
+                </div>
+
+                <div class="sliderBox">
+                    <label>Depart (Wharf 1-6):</label>
+                    <input id="depart" type="range" min="0" max="11" name="Y" value="0">
+                    <p id="departOutput" class="outputFeedback">Wharf 1A</p>
+                </div>
+
+                <div class="sliderBox">
+                    <label>Arrive (Wharf 1-6):</label>
+                    <input id="arrive" type="range" min="0" max="11" name="Y" value="0">
+                    <p id="arriveOutput" class="outputFeedback">Wharf 1A</p>
+                </div>
+
+                <button id="plusButton" onclick="addJourney()">+</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="script.js"></script>
